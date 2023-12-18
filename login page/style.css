@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: linear-gradient(45deg, #fc4594, #bd6ee7, #b27af6, #79e0e3, #5ae211, #79e0e3);
+
+        color: white;
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: -1;
+    margin: 0;
+    overflow: hidden;
+    backdrop-filter: blur(10%);
+}
+
+.container {
+    padding: 20px 40px;
+background: transparent;
+backdrop-filter: blur(200px);
+    border: 2px solid rgba(248, 243, 243, 0.4);
+    border-radius: 20px 40px;
+    box-shadow: 22px 4px 6px rgb(0, 0, 0, 0.3);
+
+
+}
+
+.icone {
+    text-align: center;
+    margin-bottom: 30px;
+    filter: blur(2px);
+
+}
+
+.icone i {
+    background-image: linear-gradient(50deg, #bd6ee7,  #79e0e3, #f9a5f7);
+    font-size: 60px;
+    width: 80px;
+    height: 80px;
+    border-radius: 90px;
+    border: 2px solid rgba(248, 243, 243, 0.4);
+
+
+}
+
+.container a {
+    text-decoration: none;
+    border-bottom-color: #adf4d3;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+   background-image: linear-gradient(50deg,#fc4594, #bd6ee7,#79e0e3);
+
+   border: 2px solid rgba(248, 243, 243, 0.4);
+padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 10px 20px;
+    color:  #fff;
+   border: transparent;
+    backdrop-filter: blure(3px);
+
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px 0;
+    color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: #adf4d3;
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+
+}
+
+.form-control label span {
+display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+.form-control input:focus+label span ,
+.form-control input:valid+label span {
+    color: #adf4d3;
+    transform: translateY(-30px);
+}
